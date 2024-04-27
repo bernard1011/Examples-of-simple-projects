@@ -1,0 +1,28 @@
+Firstly 
+Make 4 h2 heading 
+One pair for Your score
+And one pair for Time left
+
+
+Make a grid from divs add class squere for them and id for each
+
+Secondly 
+Style grid class, add w and 6 about 600px
+style squere class elements. Each element should have w and h about 200px, and border color set to black, solid and 1 px
+
+Thirdly 
+
+in js select all elements with squere class
+select elemnts with mole class
+
+get elemnts score and time left 
+
+create a variable named result and assign 0 to it
+
+create a function randomSqure without parametr that remove class mole from each elemnt with squere class
+
+create varible customPosition, that have custom position in squere elemts array 
+
+create a function for automatic move a mole
+
+add automatic event listener
