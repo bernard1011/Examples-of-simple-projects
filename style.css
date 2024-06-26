@@ -1,0 +1,393 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+/* #region header */
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5em;
+}
+
+nav {
+  width: 55vw;
+  background-color: rgb(0, 105, 105);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  width: 70vw;
+}
+
+nav a, section a {
+  color: rgb(230, 230, 230);
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+nav a:hover, section a:hover {
+  transform: scale(1.2);
+  color: rgb(255, 255, 255);
+}
+
+nav a:active, section a:active {
+  opacity: 0.7;
+}
+
+/* #endregion */
+
+/* #region main */
+
+main {
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.promotion {
+  width: 57vw;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.3);
+  background-color: rgb(0, 105, 105);
+  color: rgb(230, 230, 230);
+  margin-bottom: 3em;
+}
+
+.promotion-text {
+  display: none;
+}
+
+
+/* #endregion */
+
+/* #region article */
+
+.article-container {
+  display: grid;
+  grid-template-rows: 265px 265px 265px;
+  row-gap: 2em;
+}
+
+/* card */
+
+article {
+  max-width: 59vw;
+  background-image: url(images/istockphoto-1316145932-612x612.jpg);
+  background-size: cover;
+  padding: 3.7em 0 0;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: all ease 0.5s;
+}
+
+.book-a-table {
+  background-image: url(images/1490188710731.jpeg);
+}
+
+.opening-hours {
+  background-image: url(images/58300.jpg);
+  padding: 1em 0 0;
+}
+
+.card-content {
+  padding: 0.85em;
+  color: aliceblue;
+  background: linear-gradient(
+    hsl(0 0% 0%/ 0),
+    hsla(172, 100%, 13%, 0.3) 20%,
+    hsla(160, 100%, 22%, 0.7)
+  );
+}
+
+.card-text {
+  display: none;
+}
+
+.card-content h2 {
+  position: relative;
+}
+
+.card-content h2::after {
+  content: "";
+  position: absolute;
+  background: rgb(67, 201, 201);
+  width: 100%;
+  left: -0.55em;
+  height: 3px;
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all ease 0.3s;
+}
+
+
+
+/* button */
+
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 3px 10px;
+  transition: all ease 0.2s;
+  background-color: rgb(67, 201, 201);
+  color: aliceblue;
+}
+
+button:hover {
+  background: rgb(50, 145, 145);
+}
+
+/* #endregion */
+
+
+footer {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer section {
+  color: aliceblue;
+  background-color: rgb(0, 105, 105);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  border-radius: 15px;
+  gap: .7em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.3);
+}
+
+i {
+  padding-right: 0.3em;
+}
+
+
+
+/* #region media and anumation on hover */
+
+/* animation on hover and media query */
+
+
+@media(min-width: 375px) {
+
+
+  nav {
+    display: none;
+  }
+
+  .card-content {
+    transform: translateY(-11%);
+  }
+  
+}
+
+@media(min-width: 388px) {
+  .card-content {
+    transform: translateY(-7%);
+  }
+}
+
+@media(min-width: 469px) {
+  .card-content{
+    transform: translateY(0%);
+  }
+}
+
+@media(min-width: 535px) {
+  .card-content {
+    transform: translateY(9%);
+  }
+}
+
+@media(min-width: 667px){
+  .card-content {
+    transform: translateY(17%);
+  }
+}
+
+@media(min-width: 957px) {}
+
+@media (hover) {
+  .card-content {
+    transform: translateY(65%);
+    transition: all ease 0.5s;
+  }
+
+  .opening-hours .card-content {
+    transform: translateY(70%);
+  }
+
+  article:hover,
+  article:focus-within {
+    transform: scale(1.05);
+  }
+  article:hover .card-content,
+  article:focus-within .card-content {
+    transform: translateY(0);
+    transition-delay: 0.3s;
+  }
+
+  article:focus-within .card-content {
+    transition-duration: 0s;
+  }
+
+  .card-content > *:not(.card-content h2):not(button) {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  article:hover .card-content > *:not(.card-content h2):not(button),
+  article:focus-within .card-content > *:not(.card-content h2):not(button) {
+    opacity: 1;
+    transition-delay: 0.5s;
+  }
+
+  article:hover .card-content h2::after,
+  article:focus-within .card-content h2::after {
+    transform: scaleX(1.05);
+  }
+
+  @media(min-width: 500px) {
+    nav {
+      display: flex;
+    }
+  }
+
+  @media(min-width: 535px){
+    article {
+      padding: 4.7em 0 0;
+    }
+
+    .opening-hours {
+      padding: 2.3em 0 0;
+    }
+  }
+
+  @media(min-width: 665px) {
+   .article-container {
+      display: grid;
+      grid-template-columns: 235px 235px;
+      grid-template-rows: 295px;
+      column-gap: 2em;
+   } 
+  }
+
+  @media(min-width: 845px) {
+    .promotion {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/DSC02314-1920x700.jpg);
+      background-size: 100%;
+    }
+  }
+
+  @media(min-width: 1100px) {
+    .article-container {
+      grid-template-columns: 235px 235px 235px;
+      height: 55vh;
+    }
+
+    nav {
+      width: 68vw;
+    }
+
+    .promotion {
+      width: 68vw;
+    }
+
+    .promotion {
+      height: 250px;
+      background-repeat: inherit;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .promotion h2 {
+        font-size: 32px;
+    }
+
+    .promotion p{
+      font-size: 24px;
+    }
+  }
+
+  @media (min-width: 1500px) {
+      .promotion {
+        height: 300px;
+      }
+
+      .promotion-text {
+        display: flex;
+      }
+
+      .promotion p {
+        font-size: 20px;
+      }
+
+      .article-container {
+        grid-template-columns: 400px 400px 400px;
+        column-gap: 3vw;
+        height: 71vh;
+      }
+
+      article, .opening-hours{
+        height: 65vh;
+      }
+
+      .opening-hours {
+        padding: 4.3em 0 0;
+        font-size: 18px;
+      }
+     
+      .card-content {
+        padding-top: 4em;
+        padding-bottom: 10em;
+        font-size: 18px;
+      }
+
+      .opening-hours .card-content {
+        padding-top: 1.9em;
+      }
+    
+
+      footer section {
+        width: 70vw;
+      }
+
+  }
+  @media (min-width: 1900px) {
+      .card-text {
+        display: flex;
+      }
+
+      .card-content {
+        padding-top: 7em;
+      }
+
+      .opening-hours .card-content {
+        padding-top: 5em;
+      }
+  }
+}
+
+/* #endregion */
