@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scoreboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <article class="scoreboard">
+        <div class="time">
+          <h3>Time</h3>
+          <input
+            type="display"
+            name="timer"
+            id="timer"
+            readonly
+            placeholder="01:00"
+          />
+        </div>
+        <div class="header">
+          <h1>Score</h1>
+        </div>
+        <div class="score">
+          <div class="score-home">
+            <h2>Home</h2>
+            <input type="display" readonly id="home-display" placeholder="0" />
+            <div class="buttons">
+              <button id="plusOneH">+1</button>
+              <button id="plusTwoH">+2</button>
+              <button id="plusThreeH">+3</button>
+            </div>
+          </div>
+          <div class="score-guest">
+            <h2>Guset</h2>
+            <input type="display" readonly id="guest-display" placeholder="0" />
+            <div class="buttons">
+              <button id="plusOneG">+1</button>
+              <button id="plusTwoG">+2</button>
+              <button id="plusThreeG">+3</button>
+            </div>
+          </div>
+        </div>
+        <div class="main-btn" id="btn-container">
+          <button id="start">Start</button>
+        </div>
+      </article>
+      <script src="app.js"></script>
+    </main>
+  </body>
+</html>
