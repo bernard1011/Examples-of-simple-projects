@@ -1,0 +1,151 @@
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    bottom: 0;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #151515;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.sidebar-toggle{
+    /* display: none; */
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.sidebar-toggle:hover{
+    color: #3636367c;
+    transition: all .2s linear;
+}
+
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+
+.close-btn {
+    font-size: 28px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.close-btn:hover {
+    color: #3636367c;
+    transition: all .2s linear;
+}
+
+.logo{
+    justify-self: center;
+    height: 35px;
+}
+
+.links a {
+    display: block;
+    font-size: 24px;
+    text-transform: capitalize;
+    padding: 16px 24px;
+    transition: all .2s linear;
+}
+
+.links a:hover{
+    transition: all .2s linear;
+    background-color: #36363627;
+    padding-left: 28px;
+}
+
+.social-icons {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    padding-bottom: 32px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin: 0 8px;
+    transition: all .2s linear;
+}
+
+.social-icons a:hover {
+    transition: all .2s linear;
+    color: #3636367c;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    background-color: #fff;
+    box-shadow: #151515;
+    transition: all .2s linear;
+    transform: translate(-100%);
+}
+
+.show-sidebar {
+    transform: translate(0);
+}
+
+@media screen and (min-width: 676px) {
+    .sidebar {
+        width: 400px;
+    }
+    .sidebar-toggle{
+        display: flex;
+    }
+  
+}
+
+
+
+
+
+
+

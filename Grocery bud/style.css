@@ -1,0 +1,153 @@
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-size: 20px;
+  background-color: aliceblue;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+form h1 {
+  text-transform: capitalize;
+  padding-bottom: 0.5em;
+}
+
+input {
+  font-size: 18px;
+  border: none;
+  background-color: aliceblue;
+  width: 25em;
+  height: 3em;
+  padding-left: 0.5em;
+  border-radius: 0.5em 0 0 0.5em;
+}
+
+
+
+input:focus {
+  outline: none;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 50em;
+  padding-top: 10em;
+  display: flex;
+  justify-content: center;
+}
+
+.article {
+  background-color: #fff;
+  text-align: center;
+  width: 30em;
+  padding-top: 3em;
+  padding-bottom: 2em;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.item {
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 0.5em;
+  border-radius: 7px;
+  transition: all .2s linear;
+  text-transform: capitalize;
+}
+
+.item:hover {
+  background: aliceblue;
+}
+
+.grocery-container {
+  visibility: hidden;
+}
+
+.show-container {
+  visibility: visible;
+}
+
+.grocery-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  text-transform: capitalize;
+}
+
+.alert-danger {
+  margin: auto;
+  margin-top: -1.5em;
+  margin-bottom: 0.3em;
+  text-transform: capitalize;
+  background: #ffcdcd;
+  width: 26.2em;
+  border-radius: 5px;
+  color: #fd4b4b;
+}
+
+.alert-succes {
+  margin: auto;
+  margin-top: -1.5em;
+  margin-bottom: 0.3em;
+  text-transform: capitalize;
+  background: #b9d6b4;
+  width: 26.2em;
+  border-radius: 5px;
+  color: #36862c;
+}
+
+
+/* #region btn */
+
+button {
+  cursor: pointer;
+}
+
+.submit-btn {
+  font-size: 18px;
+  border: none;
+  background-color: rgb(174, 216, 253);
+  width: 5em;
+  height: 3em;
+  border-radius: 0 0.5em 0.5em 0;
+  text-transform: capitalize;
+  margin-left: -1em;
+}
+
+.btn-container button {
+  margin-left: 0.5em;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+}
+
+.edit-btn {
+  color: rgb(82, 174, 255);
+}
+
+.delete-btn {
+  color: rgb(255, 99, 99);
+}
+
+.clear-btn {
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  text-transform: capitalize;
+  color: rgb(255, 99, 99);
+  padding-top: 1em;
+}
+
+/* #endregion */
+

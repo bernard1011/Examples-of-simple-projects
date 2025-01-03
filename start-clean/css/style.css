@@ -1,0 +1,667 @@
+/* #region html */
+
+html {
+    box-sizing: border-box;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: 'Comfortaa', cursive;
+    /* font-family: 'Yeseva One', cursive; */
+}
+
+.main {
+    background-color: #FFF8F3;
+    overflow-x: clip;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+/* #endregion */
+
+.container {
+    max-width: 1180px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+}
+
+
+
+.menu__btn {
+    display: none;
+    width: 30px;
+    height: 25px;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu__btn span {
+    height: 1px;
+    background-color: #7B6152;
+    width: 100%;
+}
+
+/* #region header */
+
+.header {
+    background-color: #FFF8F3;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4px;
+}
+
+.menu__list {
+    display: flex;
+    gap: 20px
+}
+
+.menu__list-item {
+    text-transform: uppercase;
+}
+
+.phone {
+    position: relative;
+}
+
+.phone::before {
+    content: url(/images/phone.svg);
+    width: 20px;
+    height: 20px;
+    left: -23px;
+    top: -4px;
+    position: absolute;
+}
+
+/* #endregion */
+
+/* #region top */
+
+.top {
+    padding: 30px 0 150px;
+}
+
+.top__content {
+    width: 370px;
+    padding: 150px 0 250px;
+}
+
+.top__inner {
+    position: relative;
+    /*relative указывается родителю,
+    если Вам нужно абсолютным позиционированием выставить элемент. Но при этом,
+    чтобы этот элемент не выходил за грацины родителя  */
+}
+
+.top__title {
+    font-family: Yeseva One;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.top__text {
+    margin: 15px 0 48px;
+}
+
+.top__buy {
+    width: 150px;
+    height: 55px;
+    color: #272727;
+    font-family: Comfortaa;
+    font-weight: 600;
+    background: #FFBD59;
+}
+
+.top__img {
+    position: absolute;
+    /*виставляем элемент с помощью абсолютного позиционирования*/
+    top: 0;
+    left: 240px;
+}
+
+
+/* #endregion */
+
+
+/* #region about */
+
+.about__us {
+    background-color: #A5978E;
+    padding: 50px 0;
+}
+
+.about__inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.about__us--text {
+    min-width: 370px;
+    color: #FAFAFA;
+}
+
+.about__us--text h2 {
+    font-size: 40px;
+    font-family: Yeseva One;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.about__us--text p {
+    padding-bottom: 15px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.about_images {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    padding-left: 110px;
+    padding-bottom: 70px;
+    flex-basis: 930px;
+}
+
+.about_images::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(../images/about-decor.png);
+    width: 22px;
+    height: 30px;
+}
+
+.about_images::after {
+    height: 1px;
+    background-color: #7B6152;
+    content: '';
+    position: absolute;
+    width: 1000%;
+    bottom: 9px;
+    left: 22px;
+}
+
+.about_images figcaption {
+    color: #FAFAFA;
+    font-size: 11px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+/* #endregion */
+
+
+/* #region our__goods */
+
+.our__goods {
+    padding: 150px 0;
+}
+
+.goods__inner {
+    display: grid;
+    grid-template-columns: 370px auto;
+}
+
+
+
+.goods--text h2 {
+    font-size: 40px;
+    font-family: Yeseva One;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.goods--text p {
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.goods--cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 50px 90px;
+}
+
+.card {
+    text-align: center;
+    width: 290px;
+    margin: 0 auto;
+}
+
+.goods--cards h3 {
+        font-family: Yeseva One;
+        font-size: 16px;
+        font-weight: 400;
+        padding-bottom: 12px;
+}
+
+.goods--cards p {
+        font-family: Comfortaa;
+        font-size: 12px;
+        font-weight: 400;
+        padding-bottom: 27px;
+}
+
+
+
+/* #endregion */
+
+/* #region footer */
+
+footer {
+    background-color: #FFF;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 230px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 15px;
+}
+
+/* #endregion */
+
+
+
+/* #region media */
+
+@media(max-width: 1000px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+/* #region top */
+    .top__content {
+        width: 333px;
+        padding: 95px 0 70px;
+    }
+
+    .top-text {
+        margin: 30px;
+    }
+
+    .top__img {
+        left: 300px;
+    }
+
+    .top__image {
+        width: 655px;
+    }
+
+    /* #endregion */
+
+
+/* #region about */
+    .about__us--text {
+        min-width: 300px;
+    }
+
+    .about_images {
+        padding-left: 20px;
+    }
+
+/* #endregion */
+}
+
+@media(max-width: 900px) {
+
+    .footer-inner {
+        flex-wrap: wrap;
+    }
+
+    .footer-contacts {
+        width: 100%;
+        align-items: center;
+        padding-top: 15px;
+    }
+}
+
+@media(max-width: 768px) {
+    body {
+        font-size: 10px;
+    }
+
+    .container {
+        max-width: 640px;
+    }
+
+    .phone::before {
+        content: url(/images/phone768.svg);
+        width: 14px;
+        height: 14px;
+        left: -15px;
+        top: -3px;
+        position: absolute;
+    }
+
+/* #region top */
+
+    .top__content {
+        width: 236px;
+    }
+
+    .top__img {
+        left: 180px;
+    }
+
+    .top__title {
+        font-size: 20px;
+    }
+
+    .top__text {
+        font-size: 10px;
+        margin: 20px 0 20px;
+    }
+
+    .top__buy {
+        width: 120px;
+        height: 45px;
+    }
+
+/* #endregion */
+
+/* #region about */
+    .about__us {
+        padding: 50px 0 90px;
+    }
+
+    .about__us--text {
+        min-width: 200px;
+    }
+
+    .about__us--text h2 {
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+
+    .about__us--text p {
+        padding-bottom: 15px;
+        font-size: 10px;
+    }
+
+    .about_images {
+        flex-basis: 500px;
+        gap: 10px;
+        padding-left: 30px;
+        padding-bottom: 19px;
+    }
+
+   .about1 {
+       width: 120px;
+   }
+
+   .about2 {
+    width: 190px;
+   }
+
+   .about3 {
+    width: 120px;
+   }
+   
+    .about_images figcaption {
+        font-size: 6px;
+        padding-top: 2px;
+    }
+
+   /* #endregion */
+
+
+    .about_images::before {
+        bottom: -29px;
+    }
+
+    .about_images::after {
+        bottom: -19px;
+    }
+}
+
+@media(max-width: 640px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .header__menu-list {
+        width: 153px;
+        padding: 25px 34px 25px 43px;
+        flex-direction: column;
+        text-align: left;
+        color: #FFF;
+        background-color: #7B6152;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transform: translateY(-110%);
+        transition: transform .5s ease;
+    }
+
+    .header__menu-list.menu--open {
+        transform: translateY(0%);
+    }
+
+
+    .menu__btn {
+        display: flex;
+
+    }
+
+    .header__menu {
+        order: 1;
+    }
+
+}
+
+@media(max-width: 500px) {
+    .footer-inner {
+        flex-direction: column;
+    }
+
+    .footer__menu-list {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer {
+        font-size: 14px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .about__us--text {
+        min-width: 171px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    /* #region top */
+    .top {
+        padding: 30px 0 50px;
+    }
+
+    .top__image {
+        width: 309px;
+    }
+
+    .top__title {
+        font-size: 15px;
+    }
+
+    .top__text {
+        font-size: 8px;
+        margin: 15px 0;
+    }
+
+    .top__buy {
+        width: 92px;
+        height: 34px;
+        font-size: 10px;
+    }
+
+    .top__content {
+        width: 179px;
+    }
+
+    /* #endregion */
+
+
+  
+
+    /* #region about */
+    .about__us {
+        padding: 50px 0;
+    }
+
+    .about_images {
+        gap: 5px;
+        padding-left: 17px;
+    }
+
+    .about1 {
+        width: 80px;
+    }
+    .about2 {
+        width: 140px;
+    }
+    .about3 {
+        width: 80px;
+    }
+
+    .about_images figcaption {
+        display: none;
+    }
+    
+    /* #endregion */
+}
+
+
+@media(max-width: 430px) {
+    /* #region top */
+
+    .top__image {
+        width: 185px;
+    }
+
+    .top__img {
+        left: auto;
+        right: 0;
+    }
+
+    .top__content {
+        width: 203px;
+        padding: 20px 0 0;
+    }
+
+    .top__title {
+        font-size: 18px;
+    }
+
+    .top__text {
+        font-size: 10px;
+    }
+
+    /* #endregion */
+
+    /* #region about */
+        .about__us {
+            padding: 25px 0 15px;
+        }
+
+        .about__us--text {
+            min-width: 230px;
+        }
+
+        .about__us--text p {
+            font-size: 8px;
+            padding-bottom: 10px;
+        }
+
+        .about__us--text h2 {
+            padding-bottom: 10px;
+        }
+
+        .about_images {
+            padding-left: 25px;
+        }
+
+        .about1 {
+            width: 80px;
+        }
+
+        .about2 {
+            display: none;
+        }
+        .about3 {
+            display: none;
+        }
+        
+        .about_images::before {
+            bottom: -20px;
+            left: 10px;
+        }
+
+        .about_images::after {
+            bottom: -10px;
+            left: 31px;
+        }
+
+    /* #endregion */
+
+}
+
+
+/* #endregion */

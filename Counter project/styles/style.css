@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 250px;
+}
+
+h2 {
+    font-size: 75px;
+    padding: 0;
+    margin: 0;
+}
+
+/* h1 {
+    font-size: 85px;
+    padding: 0;
+    margin: 0;
+} */
+
+span {
+    font-size: 85px;
+    padding: 0;
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+button {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 19px;
+    border-style: none;
+    border: 3px solid #151515;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 1px 3px 7px rgb(175, 175, 175);
+    transition: .2s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.reset:hover {
+    color: #fff;
+    background-color: #151515;
+    transition: .2s;
+}
+
+.decrease:hover {
+    color: #fff;
+    background-color: red;
+    transition: .2s;
+}
+.increase:hover{
+    color: #fff;
+    background-color: green;
+    transition: .2s;
+}

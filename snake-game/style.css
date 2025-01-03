@@ -1,0 +1,150 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #262630;
+    background: #EFF5FF;
+}
+
+
+.logo {
+    margin-bottom: 60px;
+}
+
+.main-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding-top: 40px;
+    padding-bottom: 44px;
+    box-sizing: border-box;
+}
+
+/* #region about me */
+.about-me-container {
+    margin-top: 100px;
+    width: 274px;
+}
+
+.photo {
+    border-radius: 15%;
+    width: 274px;
+}
+
+.my-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 20px 0 32px;
+}
+
+.list-item {
+    padding-left: 14px;
+}
+
+.list-item li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+/* #endregion */
+
+/* #region game */
+
+.game-container {
+    width: 440px;
+}
+
+
+
+.game-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+
+.game-area {
+    background: #D5E3FF;
+    width: 440px;
+    height: 440px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.game-canvas {
+    border: 1px solid #9EADF2;
+    background: #FFF;
+}
+
+.game-score {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 16px 0;
+    text-align: center;
+}
+
+.game-controls {
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+}
+
+.game-start {
+    padding: 12px 24px;
+    border-radius: 8px;
+    background: #FF6B0A;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.game-restart {
+    background: transparent;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 1px solid #FF6B0A;
+    color: #FF6B0A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* #endregion */
+
+
+
+.instructions-container {
+    width: 274px;
+}
+
+.instructions-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 32px;
+    margin-top: 92px;
+
+}
+
+.instructions-list {
+    padding-left: 24px;
+}
+
+.instructions-list__item {
+    padding-bottom: 13px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}

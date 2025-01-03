@@ -1,0 +1,286 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/* #region settings */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+#home {
+    background: linear-gradient(rgba(63, 208, 212, 0.5),
+            rgba(0, 0, 0, 0.7)), url(../image/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+
+
+.nav-header img {
+    width: 150px;
+}
+nav {
+    color: #151515;
+    background-color: #f5f5f5;
+    /* padding: 1rem 1.5rem; */
+}
+
+.nav-header {
+    padding: 1rem 1.5rem;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #151515;
+    background: #f5f5f5;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all .3s linear;
+}
+
+
+
+
+
+.nav-center {
+    margin: 0 auto;
+}
+
+.nav-toggle {
+    background: transparent;
+    border: none;
+    font-size: 26px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.nav-toggle:hover {
+    transition: all .3s linear;
+    color: #009e96;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    width: 100%;
+    padding-left: 25px;
+    margin: 0;
+    list-style: none;
+    font-size: 24px;
+    line-height: 50px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+
+
+li:hover {
+    transition: all .3s ease;
+    padding-left: 30px;
+    color: #00927f;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding-top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container h1 {
+    color: #f5f5f5;
+}
+
+.container p {
+    color: #f5f5f5;
+    font-size: 20px;
+    line-height: 25px;
+    width: 500px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-white {
+    color: #f5f5f5;
+    padding: 7px 5px 5px;
+    text-transform: uppercase;
+    border: 2px solid #f5f5f5;
+    transition: all .3s linear;
+}
+
+.btn-white:hover {
+    color: #00927f;
+    border-color: #f5f5f5;
+    background-color: #f5f5f5;
+    transition: all .3s linear;
+}
+
+/* #endregion */
+
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links-container {
+    height: 0;
+    overflow: hidden;
+    transition: all .3s linear;
+}
+
+.show-links {
+    height: 200px;
+}
+
+.section {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.section h2 {
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+.section h2 span {
+    color: #00927f;
+}
+
+#about {
+    background-color: #f5f5f5;
+}
+
+#tours {
+    background-color: #f5f5f5;
+}
+
+#about,
+#tours,
+#services {
+    height: 90vh;
+}
+
+footer {
+    padding: 0;
+    margin: 0;
+    color: #f5f5f5;
+    background-color: #00423f;
+}
+
+footer p {
+    margin: 0;
+    padding: 5rem;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.top-link {
+    font-size: 32px;
+    color: #009e96;
+    border: 2px solid #009e96;
+    transition: all .3s linear;
+    padding: 10px;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    z-index: -100;
+}
+
+.show-link {
+    visibility: visible;
+    z-index: 100;
+}
+
+.top-link:hover {
+    transition: all.3s linear ease;
+    color: #f5f5f5;
+    background-color: #009e96;
+}
+
+@media screen and (min-width: 800px) {
+    nav {
+        color: #f5f5f5;
+        background: transparent;
+    }
+
+    .nav-center {
+        box-shadow: none;
+        width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .nav-header {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .nav-header button{
+        color: #f5f5f5;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .links-container {
+        height: auto !important;
+    }
+
+    .links {
+        display: flex;
+    }
+
+    li{
+        background-color: transparent;
+        display: block;
+        margin: 0 1rem;
+        padding: 0;
+    }
+
+
+    li:hover {
+        padding: 0;
+        background-color: transparent;
+    }
+}   

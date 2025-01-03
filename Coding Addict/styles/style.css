@@ -1,0 +1,152 @@
+/* #region html */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    cursor: pointer;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* #endregion */
+
+nav {
+    background-color: rgb(28, 75, 116);
+    color: rgb(255, 255, 255);
+    /* padding-top: 15px; */
+    /* padding-bottom: 15px; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 0 15px; */
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.fa-bars {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+button {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: none;
+    transition: all .1s linear;
+}
+
+button:hover {
+    color: rgb(175, 175, 175);
+    transition: all .1s linear;
+}
+
+
+
+.nav-list li {
+    display: block;
+    padding: 10px;
+    transition: all 0.2s linear;
+    letter-spacing: 3px;
+}
+
+.nav-list li:hover {
+    background-color: rgb(30, 83, 133);
+    padding-left: 12px;
+    transition: all 0.2s linear;
+}
+
+.social-list {
+    display: none;
+}
+
+.nav-list {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+} 
+
+.show-links {
+    height: 11rem;
+}
+
+@media screen and (min-width: 845px) {
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-header {
+        padding: 0;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .nav-list {
+        height: auto;
+        display: flex;
+        
+    }
+
+    .nav-list li {
+        padding: 0;
+        margin: 0 0.5rem;
+        cursor: pointer;
+    }
+
+    .nav-list li:hover {
+        color: rgb(175, 175, 175);
+    }
+
+    .nav-list li:hover {
+        padding: 0;
+        background: transparent;
+    }
+
+    .social-list {
+        display: flex;
+    }
+
+    .social-list li {
+        color: rgb(255, 255, 255);
+        transition: all 0.3s linear;
+        list-style: none;
+        margin: 0 0.5rem;
+        cursor: pointer;
+    }
+
+    .social-list li:hover {
+        color: rgb(175, 175, 175);
+        transition: all 0.3s linear; 
+    }
+}
